@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers'; //searches for "index.js" file automatically
 import { Header } from './components/common';
+import LibraryList from './components/LibraryList';
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
     {/* Provider can only have ONE child component */}
       <View>
         <Header headerText="Tech Stack"/>
-        
+        <LibraryList/>
       </View>
     </Provider>
   );

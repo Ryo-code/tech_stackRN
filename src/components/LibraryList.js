@@ -7,7 +7,11 @@ class LibraryList extends Component {
   }
 }
 
-export default connect() (LibraryList); 
+const mapStateToProps = state => {
+  console.log("This is state", state);
+};
+
+export default connect(mapStateToProps) (LibraryList); 
 // ^This syntax calls the function "connect" (which was imported 
 //from the react-redux library), and it returns another function. 
 //Then we immediately call that function with LibraryList.
