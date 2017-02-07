@@ -1,4 +1,3 @@
-export default () => [
+import data from './LibraryList.json'; //You gotta explicitely specify ".json" or else it'll think it's a ".js" file
 
-]; //this means: when it runs, always return an array
-
+export default () => data; 
