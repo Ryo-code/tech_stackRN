@@ -3,12 +3,13 @@ import { connect } from 'react-redux';
 
 class LibraryList extends Component {
   render() {
+    console.log(this.props) //sure enough... the return statement below became props
     return;
   }
 }
 
 const mapStateToProps = state => {
-  console.log("This is state", state);
+  return { libraries: state.libraries}; //this will show up as props to LibraryList
 };
 
 export default connect(mapStateToProps) (LibraryList); 
