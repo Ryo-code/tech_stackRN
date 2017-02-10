@@ -70,7 +70,7 @@ const mapStateToProps = (state, ownProps) => {
 export default connect(mapStateToProps, actions) (ListItem);
 
 
-{/* ~~~~~~~~~ Explanation of what happens when you press a Library ~~~~~~~~~
+/* ~~~~~~~~~ Explanation of what happens when you press a Library ~~~~~~~~~
 
 1) User clicks on the Library, which calls the Action Creator
 2) Action Creator will return an Action, which gets sent to all reducers
@@ -82,4 +82,4 @@ export default connect(mapStateToProps, actions) (ListItem);
   ╰─➤ This is the component lifecycle method of "componentWillUpdate", which is
       why the "spring" animation is called right before the view update occurs.
 
-~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~ */}
+~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~ */
